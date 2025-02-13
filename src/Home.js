@@ -811,6 +811,96 @@ comparisonGraphChart: {
     alignItems: "center", // Vertically center content
     justifyContent: "center", // Horizontally center content
   },
+
+  '@media (max-width: 1200px)': { // Large Tablets and smaller laptops
+        contentArea: {
+            flexDirection: 'column', // Stack left and right content vertically
+            height: 'auto', // Allow content to determine height
+            overflow: 'auto', // Enable scrolling if needed
+        },
+        leftContent: {
+            flex: '0 0 auto', // Prevent left content from expanding
+            width: '100%', // Take full width
+            marginBottom: '20px', // Add some space below left content
+            overflow: 'auto', // Enable scrolling if needed
+        },
+        rightContent: {
+            flex: '0 0 auto', // Prevent right content from expanding
+            width: '100%', // Take full width
+            overflow: 'auto', // Enable scrolling if needed
+        },
+        quickStatistics: {
+            flexDirection: 'column', // Stack statistics vertically
+        },
+        statCard: {
+            flex: '0 0 auto', // Prevent stat cards from expanding
+            width: '100%', // Take full width
+            marginBottom: '10px', // Add spacing between stat cards
+        },
+        graph: {
+            height: '250px', // Adjust graph height for smaller screens
+        },
+        progressBarContainer: {
+            width: '100%', // Make progress bars responsive
+        },
+    },
+
+    '@media (max-width: 992px)': { // Tablets
+        graph: {
+            height: '200px', // Further adjust graph height
+        },
+        quickStatistics: {
+            flexDirection: 'column', // Stack statistics vertically
+        },
+        statCard: {
+            flex: '0 0 auto', // Prevent stat cards from expanding
+            width: '100%', // Take full width
+            marginBottom: '10px', // Add spacing between stat cards
+        },
+    },
+
+    '@media (max-width: 768px)': { // Small Tablets and large phones
+        graph: {
+            height: '200px', // Further adjust graph height
+        },
+        quickStatistics: {
+            flexDirection: 'column', // Stack statistics vertically
+        },
+        statCard: {
+            flex: '0 0 auto', // Prevent stat cards from expanding
+            width: '100%', // Take full width
+            marginBottom: '10px', // Add spacing between stat cards
+        },
+    },
+
+    '@media (max-width: 576px)': { // Phones
+        graph: {
+            height: '150px', // Further adjust graph height
+        },
+        quickStatistics: {
+            flexDirection: 'column', // Stack statistics vertically
+        },
+        statCard: {
+            flex: '0 0 auto', // Prevent stat cards from expanding
+            width: '100%', // Take full width
+            marginBottom: '10px', // Add spacing between stat cards
+        },
+    },
+
+    '@media (max-width: 400px)': { // Smaller phones
+        graph: {
+            height: '150px', // Further adjust graph height
+        },
+        quickStatistics: {
+            flexDirection: 'column', // Stack statistics vertically
+        },
+        statCard: {
+            flex: '0 0 auto', // Prevent stat cards from expanding
+            width: '100%', // Take full width
+            marginBottom: '10px', // Add spacing between stat cards
+        },
+    },
+
   
 };
 
